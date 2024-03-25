@@ -1,6 +1,16 @@
 # nestjs-sqlite-demo
 
-## Run online
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/MarvinXu/nestjs-sqlite-demo)
+## Installation
 
-- Once the app starts, Open `/swagger` to enter swagger interface
+
+`npm install`
+
+## Run the sample
+
+Then, run Nest as usual:
+
+`npm run start`
+
+## Browse online documents
+
+http://localhost:3000/swagger
