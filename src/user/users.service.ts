@@ -9,12 +9,18 @@ export class UsersService {
   constructor(
     @InjectRepository(User)
     private readonly usersRepository: Repository<User>,
-  ) {}
+  ) { }
 
   create(createUserDto: CreateUserDto): Promise<User> {
     const user = new User();
-    user.firstName = createUserDto.firstName;
-    user.lastName = createUserDto.lastName;
+    user.btcAccount = createUserDto.btcAccount;
+    user.evmAccount = createUserDto.evmAccount;
+    user.evmSign = createUserDto.evmSign;
+    user.twitterId = createUserDto.twitterId
+    user.twitterName = createUserDto.twitterName
+    user.twitterUsername = createUserDto.twitterUsername
+    user.tgId = createUserDto.tgId
+    user.tgName = createUserDto.tgName
 
     return this.usersRepository.save(user);
   }
