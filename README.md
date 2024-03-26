@@ -13,4 +13,4 @@ Then, run Nest as usual:
 
 ## Browse online documents
 
-http://localhost:3000/swagger
+http://localhost:3001/swagger
